@@ -11,7 +11,7 @@ led = digitalio.DigitalInOut(board.D13)
 led.direction = digitalio.Direction.OUTPUT
 
 while True:
-    for brightness in [0.2,0.3,0.4,0.6,0.95,1,0.65,0.35,0.2,0.1]:
+    for brightness in [0.2,0.4,0.6,0.8,1,0.3,0.2,0.05]:
         # brightness is measured out of a max of 1.0
         T_fast = 0.01
         T_on = brightness*T_fast
